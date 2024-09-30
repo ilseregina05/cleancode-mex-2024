@@ -1,0 +1,17 @@
+#include <string.h>
+
+int main() {
+ char palabras[50];
+ printf("Writte different words: ");
+ scanf("%[^\n]s", palabras);
+
+ char *token = strtok(palabras, " ");
+ while (token != NULL) {
+ if (token[0] == 'B') {
+ printf("%s\n", token);
+ }
+ token = strtok(NULL, " ");
+ }
+
+ return0;
+}
