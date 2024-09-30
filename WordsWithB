@@ -1,4 +1,5 @@
 #include <string.h>
+#include <stdio.h>
 
 int main() {
  char palabras[50];
@@ -13,5 +14,5 @@ int main() {
  token = strtok(NULL, " ");
  }
 
- return0;
+ return 0;
 }
